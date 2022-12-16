@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+:root {
+  --primary-brand: hsl(322, 100%, 66%);
+  --primary-brand-light: hsl(321, 100%, 78%);
+  --primary-warning: hsl(0, 100%, 63%);
+  --neutral-dark: hsl(192, 100%, 9%);
+  --neutral-light: hsl(207, 100%, 98%);
+}
+
+.flex {
+  display: flex;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h3,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+[class*="btn"]:hover {
+  background-color: var(--primary-brand-light);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: whitesmoke;
+  /* width: 1440px; */
+  /* width: 375px; */
+}
+
+.header-wrapper {
+  margin: 24px auto 115px auto;
+  width: 87%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo img {
+  width: 92px;
+  margin: 5px 0px 0px 2px;
+}
+
+.try-btn {
+  border: 1px solid var(--primary-brand);
+  font-size: 10px;
+  color: var(--primary-brand-light);
+  padding: 4px 15px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.try-btn:hover {
+  background-color: initial;
+  border-color: var(--primary-brand-light);
+  transform: scale(1.1);
+}
+
+.main-wrapper {
+  width: 82%;
+  margin: auto;
+  text-align: center;
+}
+
+.main-wrapper p {
+  font-size: 14px;
+  margin: 23px 0px 55px;
+  line-height: 21px;
+}
+
+.start-btn {
+  border: none;
+  font-size: 13px;
+  padding: 10px 38px;
+  background-color: var(--primary-brand);
+  color: white;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* MAIN SECTION */
+.main-section__wrapper {
+  margin: 0px auto;
+  margin-top: 110px;
+  width: 81%;
+}
+
+.stats {
+  margin-top: 115px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.community-stat img {
+  width: 35px;
+}
+
+.community-stat h2 {
+  margin: -8px 0px 0px 2px;
+  font-size: 60px;
+}
+
+.community-stat p {
+  font-size: 15px;
+  margin: 6px 0px 0px 4px;
+}
+
+.message-stat {
+  margin-top: 94px;
+}
+
+.message-stat img {
+  width: 23px;
+}
+
+.message-stat h2 {
+  font-size: 52px;
+  margin-left: -5px;
+}
+
+.message-stat p {
+  font-size: 13px;
+  margin: 6px 0px 0px 20px;
+}
+
+/* FEATURES SECTION */
+.features-section {
+  margin-top: 26px;
+}
+
+.feature:nth-child(2n + 1) {
+  background-color: var(--neutral-light);
+}
+
+.feature:nth-child(2n + 1)::before,
+.feature:nth-child(2n + 1)::after {
+  content: "";
+  display: block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+}
+
+/*ANCHOR GROW features */
+.grow {
+  width: 100%;
+}
+
+.grow:before {
+  height: 112px;
+  background-image: url(/images/bg-section-top-mobile-1.svg);
+}
+
+.grow::after {
+  height: 52px;
+  background-image: url(images/bg-section-bottom-mobile-1.svg);
+}
+
+.grow-content {
+  flex-direction: column;
+  width: 86%;
+  margin: 0px auto;
+  align-items: center;
+  margin-top: 78px;
+}
+
+.grow-content img {
+  width: 80%;
+}
+
+.grow-content h3 {
+  margin-top: 78px;
+  text-align: center;
+}
+
+.grow-content p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 53px;
+}
+
+/*ANCHOR CONVERSATION features */
+.conversation {
+  margin-top: 140px;
+}
+
+.conversation-content {
+  flex-direction: column;
+  align-items: center;
+  width: 86%;
+  margin: 0px auto;
+}
+
+.conversation-content img {
+  width: 82%;
+}
+
+.conversation-content h3 {
+  margin-top: 88px;
+  text-align: center;
+}
+
+.conversation-content p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*ANCHOR USERS features */
+.users {
+  margin-top: 120px;
+}
+
+.users::before {
+  height: 103px;
+  background-image: url(images/bg-section-top-mobile-2.svg);
+}
+
+.users::after {
+  height: 101px;
+  background-image: url(images/bg-section-bottom-mobile-2.svg);
+}
+
+.users-content {
+  flex-direction: column;
+  align-items: center;
+  width: 86%;
+  margin: 16px auto 114px;
+}
+
+.users-content img {
+  width: 82%;
+}
+
+.users-content h3 {
+  margin-top: 84px;
+  text-align: center;
+}
+
+.users-content P {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 14px;
+  line-height: 21px;
+}
+
+/* SECONDARY SECTION */
+.secondary-section {
+  margin-top: 68px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondary-section h1 {
+  text-align: center;
+  margin-left: 1px;
+}
+
+.secondary-section a {
+  margin-top: 40px;
+}
+
+/* FOOTER SECTION */
+footer {
+  margin-top: 251px;
+  background-color: var(--neutral-dark);
+  color: white;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  height: 53px;
+  background-image: url(images/bg-footer-top-mobile.svg);
+  background-size: 100% 100%;
+  background-color: whitesmoke;
+}
+
+.footer-wrapper {
+  flex-direction: column;
+  width: 86%;
+  margin: auto;
+  margin-top: 58px;
+}
+
+.newsletter h4 {
+  font-family: "Open sans";
+  font-size: 20.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.newsletter p {
+  font-weight: 600;
+  margin-top: 17px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.newsletter form {
+  flex-direction: column;
+}
+
+#email {
+  margin: 31px 0px 0px 1px;
+  height: 50px;
+  width: 99%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding-left: 16px;
+}
+
+#email:invalid {
+  border: 2px solid var(--primary-warning);
+}
+
+.subscribe-btn {
+  margin: 15px 1.5px 0px 0px;
+  width: 160px;
+  height: 48px;
+  align-self: flex-end;
+  border-radius: 6px;
+  border: none;
+  font-family: inherit;
+  background-color: var(--primary-brand);
+  color: white;
+  font-size: 16.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.brand-contact {
+  margin-top: 103px;
+}
+
+.brand-contact img {
+  width: 202px;
+  filter: invert(100%) sepia(65%) saturate(2%) hue-rotate(328deg)
+    brightness(180%) contrast(100%);
+}
+
+.brand-contact p {
+  margin-top: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.brand-contact__phone,
+.brand-contact__email {
+  margin-left: 2.5px;
+  font-size: 14px;
+  gap: 20px;
+  align-items: center;
+}
+
+.brand-contact__phone {
+  margin-top: 42px;
+  margin-bottom: 22px;
+}
+
+.brand-social {
+  margin: 49px 0px 42px 2.5px;
+}
+
+.brand-social i {
+  color: white;
+  font-size: 26px;
+  margin-right: 14px;
+}
